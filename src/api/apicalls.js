@@ -38,20 +38,20 @@ export function getAuthors() {
 
 export function getBooksFromAuthor() {
   return fetch(
-    "http://authorappapi.azurewebsites.net/api/authors/76053df4-6687-4353-8937-b45556748abe/books/"
+    "https://authorappapi.azurewebsites.net/api/authors/76053df4-6687-4353-8937-b45556748abe/books/"
   ).then(res => res.json());
 }
 
 export function getBooksFromSlug(slug) {
   return fetch(
-    "http://authorappapi.azurewebsites.net/api/authors/" + slug + "/books/"
+    "https://authorappapi.azurewebsites.net/api/authors/" + slug + "/books/"
   ).then(res => res.json());
 }
 
 export function saveAuthor(author) {
   debugger;
   console.log(JSON.stringify(author));
-  return fetch("http://authorappapi.azurewebsites.net/api/authors/", {
+  return fetch("https://authorappapi.azurewebsites.net/api/authors/", {
     method: "POST",
     mode: "no-cors",
     headers: { "content-type": "application/json" },
