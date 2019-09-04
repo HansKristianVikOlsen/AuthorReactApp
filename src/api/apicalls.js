@@ -31,8 +31,8 @@ export function saveAuthor(author) {
 */
 
 export function getAuthors() {
-  return fetch("http://authorappapi.azurewebsites.net/api/authors/").then(res =>
-    res.json()
+  return fetch("https://authorappapi.azurewebsites.net/api/authors/").then(
+    res => res.json()
   );
 }
 
